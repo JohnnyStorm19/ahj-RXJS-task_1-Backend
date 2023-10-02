@@ -1,6 +1,6 @@
-import createResponse from "./CreateResponse.js";
+import { createResponse } from "./createResponse.js";
 
-function getUnreadMessages(chatMessages) {
+export function getUnreadMessages(chatMessages) {
     let unreadMessages = [];
     
     if (!chatMessages.unreadMessages) {
@@ -19,5 +19,3 @@ function getUnreadMessages(chatMessages) {
 
     return { success: true, messages: unreadMessagesResponse }; // отвечаем на клиент
 }
-
-export default getUnreadMessages;

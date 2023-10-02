@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import chatMessages from '../../db/chatMessages-db.js';
-import getUnreadMessages from '../../controllers/getUnreadMessages.js';
+import { getUnreadMessages } from '../../controllers/getUnreadMessages.js';
 
 const messagesRouter = new Router();
 
