@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import messagesRouter from './routes/login/messages-routers.js';
+import messagesRouter from './routes/messages/messages-routers.js';
 
 const app = express();
 const port = process.env.PORT || 7070;
